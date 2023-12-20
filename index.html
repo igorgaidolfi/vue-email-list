@@ -7,7 +7,7 @@
     </head>
     <body>
         <div id="app">
-            <ul>
+            <ul v-if="mail.length == 10">
                 <li v-for="(elem,index) in mail" :key="index">{{elem}}</li>
             </ul>
         </div>
